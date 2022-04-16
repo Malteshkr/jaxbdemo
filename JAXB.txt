@@ -1,0 +1,30 @@
+JAX-B:
+
+Sunmicro system.
+
+Java arch For Xml Binding
+JAX-B API is used to convert java object into XML and XML into java object
+
+converting of Java object into XML-> Marshalling
+Converting XML into java object -> Unmarshalling
+
+JAX-B API is having two verison 1.X and 2.X
+
+Step 1 : create Binding class (JAva Bean based class)
+step-2 : define the mapping b/w java programming elements to XML
+(the mapping we can defing by using JAXB annotations)
+step 3: writte logic for marshalling OR for unmarshaling as per requirement
+
+
+s1:
+@XmlRootElement
+public class Employee implements Serializable{
+private int empNo;
+private String name;
+private double salary;
+}
+
+@XmlRootElement
+@XmlElement
+@XmlAttribute
+
